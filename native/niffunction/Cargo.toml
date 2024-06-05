@@ -1,0 +1,15 @@
+[package]
+name = "niffunction"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[lib]
+name = "niffunction"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.25.0"
+implied-vol = "0.2.1"
+black_scholes = "0.10.2"
