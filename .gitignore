@@ -24,3 +24,7 @@ rust_elixir_nifs-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+*.idea
+
+*Cargo.lock
