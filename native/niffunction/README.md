@@ -1,20 +1,5 @@
-# NIF for Elixir.NifFunction
+# Elixir NIF's for Rust functions
 
-## To build the NIF module:
+- Currently interfaces with `implied_vol::{implied_black_volatility, implied_normal_volatility}` and `black_scholes::compute_all`
 
-- Your NIF will now build along with your project.
-
-## To load the NIF:
-
-```elixir
-defmodule NifFunction do
-    use Rustler, otp_app: :rust_elixir_nifs, crate: "niffunction"
-
-    # When your NIF is loaded, it will override this function.
-    def add(_a, _b), do: :erlang.nif_error(:nif_not_loaded)
-end
-```
-
-## Examples
-
-[This](https://github.com/hansihe/NifIo) is a complete example of a NIF written in Rust.
+- see tests for usage
